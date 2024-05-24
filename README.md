@@ -1,4 +1,4 @@
-Web Application using the MERN stack (MongoDB, Express, React, and Node.js)
+Web Application using the MERN stack (MongoDB, Express, React, and Node.js) to keep track of employees in a company.
 
 Developed initially based on the class of CS648 at San Diego State University (by Professor Zak Ruvalcaba)
 
