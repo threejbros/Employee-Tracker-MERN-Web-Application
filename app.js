@@ -28,7 +28,9 @@ app.use('/', routes)
 // load employees.jsx. The BrowserRouter in employees.jsx will then handle the (for example) "/routes"
 // route and in Contents.jsx, will load the EmployeeReport Component. 
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve('public/index.html'))
+    // res.sendFile(path.resolve('public/index.html'))
+    // below is for s3 on AWS
+    res.redirect('http://employee-tracker-frontend.s3-website.us-east-2.amazonaws.com');
 })
 
 const PORT = process.env.PORT || 5000
