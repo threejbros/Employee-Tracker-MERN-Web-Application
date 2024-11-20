@@ -3,7 +3,7 @@ import {getAllEmployees, getEmployee, createEmployee, updateEmployee, deleteEmpl
 
 const router = express.Router()
 
-// A) Now, we can establish our routes
+// Now, we can establish our routes
 
 // Route to get all the employees
 // Route to create employees

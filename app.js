@@ -6,6 +6,7 @@ import bodyParser from 'body-parser'
 import path from 'path'
 
 
+// Create an instance of an Express application
 const app = express()
 
 // Specifically set the public folder as the static folder
@@ -21,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 // if the below route is detected, then load our routes from routes.js
 app.use('/', routes)
 
-// This is for use of BrowserRouter. When the use clicks Report in the NavBar of Page, 
+// This is for use of BrowserRouter. When the user clicks Report in the NavBar of Page, 
 // the request to the server of "/report" is not handled by this UI (or the routes.js file).
 // So, in scenarios like this, we want to just read the contents of index.html, which in turn will
 // load employees.jsx. The BrowserRouter in employees.jsx will then handle the (for example) "/routes"
