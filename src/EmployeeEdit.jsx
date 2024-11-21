@@ -20,7 +20,7 @@ export default class EmployeeEdit extends React.Component {
 
     loadData() {
         const id = window.location.pathname.split('/')[2]
-        fetch(`/api/employees/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}/api/employees/${id}`)
         .then(response => response.json())
         .then(data => {
             data.employee.dateHired = new Date(data.employee.dateHired)
@@ -41,7 +41,7 @@ export default class EmployeeEdit extends React.Component {
         let title = form.title.value
         let currentlyEmployed = form.currentlyEmployed.checked
 
-        let url = `/api/employees/${id}`
+        let url = `${process.env.REACT_APP_API_URL}/api/employees/${id}`
         fetch(url, {
             method: 'PATCH',
             headers: {

@@ -115,7 +115,7 @@ export default class EmployeeList extends React.Component {
         this.loadData()
     }
     loadData() {
-        fetch('/api/employees')
+        fetch(`${process.env.REACT_APP_API_URL}/api/employees`)
         .then(response => response.json())
         .then(data => {
             data.employees.forEach(employee => {
@@ -126,7 +126,7 @@ export default class EmployeeList extends React.Component {
         .catch(err => {console.log(err)})
     }
     createEmployee(employee) {
-        fetch('/api/employees', {
+        fetch(`${process.env.REACT_APP_API_URL}/api/employees`, {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
@@ -143,7 +143,7 @@ export default class EmployeeList extends React.Component {
         .catch(err => console.log(err))
     }
     deleteEmployee(id) {
-        fetch(`/api/employees/${id}`, { method: 'DELETE'})
+        fetch(`${process.env.REACT_APP_API_URL}/api/employees/${id}`, { method: 'DELETE'})
         .then(response => {
             if (!response.ok) {
                 console.log('Failed to delete employee.')
