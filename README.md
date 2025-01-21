@@ -2,6 +2,8 @@ Web Application using the MERN stack (MongoDB, Express, React, and Node.js) to k
 
 Developed initially based on the class of CS648 at San Diego State University (by Professor Zak Ruvalcaba)
 
+Project Presentation PDF/Slides: https://docs.google.com/presentation/d/1gXAukosUbdlHIiGm9U4rI-WDoFjf8pkqIIhU4m95kRQ/edit?usp=sharing
+
 How to Run:
 1) Download files
 2) In your IDE, open up a terminal, and run "npm install"
