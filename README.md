@@ -4,6 +4,8 @@ Developed initially based on the class of CS648 at San Diego State University (b
 
 Project Presentation PDF/Slides: https://docs.google.com/presentation/d/1gXAukosUbdlHIiGm9U4rI-WDoFjf8pkqIIhU4m95kRQ/edit?usp=sharing
 
+Website link to see project live: http://18.190.217.54:5000/employees
+
 How to Run:
 1) Download files
 2) In your IDE, open up a terminal, and run "npm install"
